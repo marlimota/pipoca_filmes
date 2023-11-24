@@ -1,15 +1,12 @@
-import 'package:dartz/dartz.dart';
 import 'package:pipoca_filmes/domain/entities/movie_entity.dart';
 import 'package:pipoca_filmes/domain/repositories/movie_repository.dart';
 
-import '../../core/failures/failures.dart';
-
-class GetMoviesList {
+class GetTrendingMoviesList {
   final MovieRepository movieRepository;
 
-  GetMoviesList({required this.movieRepository});
+  GetTrendingMoviesList({required this.movieRepository});
 
-  Future<Either<Failure, List<MovieEntity>>> execute() async {
-    return await movieRepository.getMoviesList();
+  Future<List<MovieEntity>> call() async {
+    return await movieRepository.getTrendingMoviesList();
   }
 }
