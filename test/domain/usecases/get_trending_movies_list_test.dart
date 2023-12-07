@@ -17,32 +17,32 @@ void main() {
   );
 
   final tMoviesList = [
-    MovieEntity(
+    const MovieEntity(
         adult: true,
         backdropPath: "backdropPath",
-        genreIds: const [],
+        genreIds: [],
         id: 1,
         originalLanguage: "originalLanguage",
         originalTitle: "originalTitle",
         overview: "overview",
         popularity: 2,
         posterPath: "posterPath",
-        releaseDate: DateTime.now(),
+        releaseDate: "",
         title: "title",
         video: false,
         voteAverage: 5,
         voteCount: 500),
-    MovieEntity(
+    const MovieEntity(
         adult: true,
         backdropPath: "backdropPath",
-        genreIds: const [],
+        genreIds: [],
         id: 1,
         originalLanguage: "originalLanguage",
         originalTitle: "originalTitle",
         overview: "overview",
         popularity: 2,
         posterPath: "posterPath",
-        releaseDate: DateTime.now(),
+        releaseDate: "",
         title: "title",
         video: false,
         voteAverage: 5,

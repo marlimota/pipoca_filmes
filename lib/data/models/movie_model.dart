@@ -1,35 +1,21 @@
-class MovieModel {
-  final bool adult;
-  final String backdropPath;
-  final List<int> genreIds;
-  final int id;
-  final String originalLanguage;
-  final String originalTitle;
-  final String overview;
-  final double popularity;
-  final String posterPath;
-  final DateTime releaseDate;
-  final String title;
-  final bool video;
-  final int voteAverage;
-  final int voteCount;
+import 'package:pipoca_filmes/domain/entities/movie_entity.dart';
 
-  MovieModel({
-    required this.adult,
-    required this.backdropPath,
-    required this.genreIds,
-    required this.id,
-    required this.originalLanguage,
-    required this.originalTitle,
-    required this.overview,
-    required this.popularity,
-    required this.posterPath,
-    required this.releaseDate,
-    required this.title,
-    required this.video,
-    required this.voteAverage,
-    required this.voteCount,
-  });
+class MovieModel extends MovieEntity {
+  const MovieModel(
+      {required super.adult,
+      required super.backdropPath,
+      required super.genreIds,
+      required super.id,
+      required super.originalLanguage,
+      required super.originalTitle,
+      required super.overview,
+      required super.popularity,
+      required super.posterPath,
+      required super.releaseDate,
+      required super.title,
+      required super.video,
+      required super.voteAverage,
+      required super.voteCount});
 
   factory MovieModel.fromJson(Map<String, dynamic> json) {
     return MovieModel(
